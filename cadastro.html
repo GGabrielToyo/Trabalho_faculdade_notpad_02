@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Gabriel Alevs Dos Santos Carelli Toyo -->
+<!-- matricula:1823332107 -->
+<!-- Ambientes Internet -->
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css"href="meu_estilo.css">
+  <script src="jquery-1.11.1.js"></script><script src="jquery.maskedinput.js"></script>
+   <title>Cadastro</title>  
+</head>
+ 
+ <body>
+     <center>
+     <p><font size="5"> Para prosseguir com cadastro.</font></p>
+	 <button onClick="confirmacao()"> Clique Aqui!</button>
+	 
+	 <p id="demo"></p>
+	 <script>
+	     function confirmacao(){
+		     var x;
+			 var r = confirm("Para prosseguir com cadastro aperte OK!");
+			 if (r = true){
+			     x = "Ok, prosseguindo!";
+		     }
+			 else{
+			     x = "OK, cancelando";
+			 }
+             document.getElementById("demo").innerHTML=x;
+		}
+     </script>		
+     </center>
+	 
+	 <center>
+	 <span>
+	 <p><font size="6" color="blue">Dia dos Próximos Shows.</font></p> 
+	 <table border="3">
+	     <tr>
+		     <td><b> Local <b></td> 
+			 <td><b> Espaço </b></td>
+			 <td><b> Data </b></td>
+			 <td><b> Hora </b></td>
+		 </tr>
+
+         <tr>
+		     <td> Brasília </td>
+			 <td> Clube B&B  </td>
+			 <td> 14/10/21 </td>
+			 <td> 21h </td>
+		 </tr>
+
+         <tr>
+		     <td> Rio de Janeiro</td>
+			 <td> Boate 021  </td>
+			 <td> 25/11/21 </td>
+			 <td> 23h </td>
+		 </tr>
+
+         <tr>
+		     <td> Porto Alegre</td>
+			 <td> Espaço Cultural  </td>
+			 <td> 10/02/22 </td>
+			 <td> 20h </td>
+		 </tr>	
+	 </table>	
+     </center>
+     
+	 <aside>
+	     <img src="engenheiros.jpg" align=right width=400px height=400px hspace=310 vspace=50>
+	 </aside	>
+	 
+	 
+     <form method="post">
+	    <fieldset style="margin-right:75%">
+		<legend align="center"><font color="black">Informações para cadastro.</font></legend>
+			   
+				 <p>
+				  <label for="name"><u> Nome: </u></label>
+				  <input name="name" id="name" type="text" size="30" required>
+				  </p>
+				  
+				  <p>
+				  <label for="email"><u> E-mail: </u></label>
+				  <input name="email" id="email" type="text" size="25" value="@" required>
+				  </p>
+				  
+				  <p>
+				  <label for="website"><u> Seu Site: </u></label>
+				  <input name="website" id="website" type="text">
+				  </p>
+				  
+				  <p>
+				  <label for="number"><u> Número: </u></label>
+				  <input name="number" id="number" type="text" size=9 required>
+				  </p>
+				  
+				  <p>
+				  <label for="cpf"><u> CPF.:</u></label>
+				  <input type="text" id="cpf" size="6" required>
+				  </p>
+				 
+				   <font><u>Cidade:</u></font>
+			       <input type="text" name="cidade" size="25" maxlength="60" required autofocus></p>
+				  <br>
+				  
+				   <p><font size="5"><b> Escolha um album.<b></font></p> 
+				   <select name="album" class="ls-select">
+				      <option value="PP">O papa é pop</option>
+                      <option value="RD">Revolta dos Dandis</option>
+                      <option value="NH">Novos Horizontes</option>
+                   </select>
+				   <br>
+				   <br>
+				   <font color="black" size=5><u>Sexo:</u></font><br><br>
+			       <input type="radio" name="sexo" id="m" checked>
+		           <label for="m">Masculino</label>
+			 
+		           <P>
+		           <input type="radio" name="sexo" id="f">
+                   <label for="f">Feminino</label>
+		           </p>
+				  
+				  <p>
+				  <label for="comment"> Comentário: </label>
+				  <textarea name="comment" id="comment"></textarea>
+				  </p>
+				  
+				  <p>
+				  <input type="checkbox" name="receber_info" checked>
+	              Desejo receber novidades em meu e-mail.
+                  </p>
+				  
+				  <p>
+				  <input type="submit" value="Finalizar cadastro">
+				  </p>
+				  
+				  <p>
+				  <input type="reset" value="Apagar tudo">
+				  </p>
+	 </fieldset>			  
+	 </form>
+	 
+	 <br>
+	 
+	     <center>
+		 <span>
+	     <video width="420" height="240" loop="true" controls autoplay muted>
+		 <source src="video1.mp4" type="video/mp4">
+		 </video>
+		 <video width="420" height="240" loop="true" controls autoplay muted>
+		 <source src="video2.mp4" type="video/mp4">
+		 </video>
+		 </span>
+	     <center>
+		 
+	 <br>
+	 <footer>
+	    <div>
+		  <section id="about">
+		        <h3> Sobre </h3>
+				 <p> Faça o cadastro e acesse os melhores conteúdos sobre os Engenheiros do Hawaii.
+                   Além de ficar por dentro das novidades, shows, lançamentos e muito mais.</p>
+		 </section>
+
+         <section id="links">
+                <h3> Indicações	</h3>
+                 <ul>
+                     <li><a href="https://www.youtube.com/watch?v=uVCwGxb_FDs" target="_blank"> O Papa é Pop </a>
+                     <li><a href="https://www.youtube.com/watch?v=NvuKloRz30A" target="_blank"> Revolta dos Dandis </a>					 
+                     <li><a href="https://www.youtube.com/watch?v=SYVCtcbRLhw" target="_blank"> Piano bar </a>
+					 <li><a href="https://www.youtube.com/watch?v=POhlyynYF_I" target="_blank"> Infinita Highway </a>
+				 </ul>
+		 </section>
+		 
+		 <section id="links">
+                <h3> Turnê </h3>
+                 <ul>
+        
+                     <li><a href="https://cabofrio.rj.gov.br/" target="_blank"> Rio de janeiro </a>					 
+                     <li><a href="https://cabofrio.rj.gov.br/" target="_blank"> Porto Alegre </a>
+					 <li><a href="https://webmail.cabofrio.rj.gov.br/" target="_blank"> Brasília </a>
+				 </ul>
+		 </section>
+		</div>
+	 </footer>
+	 
+     
+             <script>	 
+	               jQuery(function($){
+                   $("#cpf").mask("999.999.999-99");
+                   $("#number").mask("(99)99999-9999");
+	               });
+                  </script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </body>
+ </html>

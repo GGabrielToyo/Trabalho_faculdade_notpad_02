@@ -1,0 +1,219 @@
+/*----------------------------------------------------------
+Seção HEADER - Topo do Site 
+----------------------------------------------------------*/
+header{
+	border-bottom: 1px solid #E0E0E0; 
+	height:150px;
+	width:100%; 
+}
+/*
+=========================
+logotipo
+=========================
+*/
+	header h1 a{
+		background:url(01.png) no-repeat; 
+		display:block; 
+		float:left; 
+		height:139px; 
+		text-indent:-9999; 
+		width:58.333333333333%; 
+	}
+/*
+=========================
+nav - menu de navegação
+=========================
+*/
+nav{
+	float:left;
+	margin-top:78px; 
+	text-align:center; 
+	width:41.6666666666667%; 
+}
+	nav ul{
+		list-style-type:none; 
+	}
+		nav li {
+			display: inline; 
+		}
+			nav ul li a{
+				margin-right: 2.5%; 
+			}
+				nav ul li:nth-child(5) a{
+					margin-right:0; 
+				}
+			nav a:link, nav a:visited{
+				color:#999;
+				font-size: 1.2222222222em; 
+				font-weight: 300;
+				letter-spacing: -0.0909090909em; 
+				line-height: 1.18181818182em; 
+				display:inline-block;
+			}
+			nav a.ativo:link, nav a:hover{
+				color:#FFFF00; 
+			}
+/*----------------------------------------------------------
+Seção .CHAMADA 
+----------------------------------------------------------*/
+.chamada{
+	height:140px;
+	text-align:center;
+	width:100%; 
+}
+	h2 span{
+		font-size: 1em; 
+		font-weight: 300;
+		letter-spacing: -0.0333333333em; 
+		line-height: 1em; 
+	}
+	.chamada h3 {
+		margin: 0 auto;
+		width:75%; 
+	}
+/*----------------------------------------------------------
+Seção .CONTAINER - Conteúdo com 3 colunas 
+----------------------------------------------------------*/
+.container{
+	background-color:#808080;
+	height: 437px;
+	padding:2.5%; 
+	width:95%; 
+}
+/*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
+.desktop, .tablet, .mobile{
+	float:left;
+	position:relative;
+	text-align:center;
+	width:31.57894736842105%; 
+}
+.desktop, .tablet{
+	margin-right: 2.631578947368421%; 
+}
+.mobile{
+	background-color:#191970;
+	margin-right:0px;
+}
+.desktop{
+	background-color:#D2B48C;
+}
+.tablet{
+	background-color:#800000;
+}
+/*
+=========================
+figure - imagens
+=========================
+*/
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+.container figure{
+	margin: 15px auto 0px auto; 
+	width:69.44444444444444%; 
+}
+/*
+=========================
+formatação do texto
+=========================
+*/
+.container h3{
+	color:#fff;
+	font-size: 1.77777777778em; 
+	font-weight: 300;
+	letter-spacing: -0.0625em; 
+	margin-bottom: 30px;
+	text-shadow:none;
+}
+.container p{
+	background-color:#fff;
+	float:left;
+	height:180px;
+	padding: 1.9444444444444445%; 
+	position:absolute;
+	max-width:100%; 
+	text-align:justify;
+	top:225px;
+}
+/*
+=========================
+formatação do botão
+=========================
+*/
+span.btn{
+	font-size: 1.1111111111em; 
+	font-weight: 400;
+	letter-spacing: -0.1em; 
+	height:27px;
+	margin-top: 30px;
+	position:absolute;
+	right: 1px;
+	text-align:center;
+	text-shadow:none;
+	width:33.33333333333333%; 
+}
+span.btn a{
+	color:#fff;
+	padding: 2px 3.333333333333333%; 
+}
+.desktop span.btn a{
+	background-color:#2E8B57;
+}
+.tablet span.btn a{
+	background-color:#FFA500;
+}
+.mobile span.btn a{
+	background-color:#8B0000;
+}
+/*----------------------------------------------------------
+Seção FOOTER - Rodape com 2 colunas 
+----------------------------------------------------------*/
+footer {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #222;
+}
+
+	footer div {
+		display: table;
+		margin: 0 auto;
+		padding: 44px 0;
+		width: 940px;
+		color: #777;
+	}
+	
+		footer div section {
+			display: table-cell;
+			width: 300px;
+		}
+		
+		footer div #about, footer div #blogroll {
+			padding-right: 20px;
+		}
+		
+	footer h3 {
+		color: #FFF;
+	}
+	
+	footer a {
+		color: #999;
+	}
+	
+		footer a:hover {
+			color: #FFF;
+			text-decoration: none;
+		}
+	
+	footer ul {
+		margin: 0 0 0 40px;
+		list-style: square;
+		color: #565656;
+	}
+	
+		footer ul li a {
+			display: block;
+		}
